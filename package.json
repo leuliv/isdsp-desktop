@@ -1,24 +1,20 @@
 {
-  "name": "instructor-student--document-sharing",
+  "name": "isdsp-desktop",
   "version": "1.0.0",
-  "description": "A document sharing platform",
+  "description": "ISDSP desktop app",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "electron ."
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/leuliv/Instructor-Student--Document-Sharing.git"
+    "start": "electron .",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=true --out=release-builds",
+    "package-win": "electron-packager . isdsp --overwrite --asar --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"isdsp\"",
+    "package-linux": "electron-packager . isdsp --overwrite --asar --platform=linux --arch=x64 --icon=assets/icons/png/icon.png --prune=true --out=release-builds"
   },
   "author": "Leul Woldegabriel",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/leuliv/Instructor-Student--Document-Sharing/issues"
-  },
-  "homepage": "https://github.com/leuliv/Instructor-Student--Document-Sharing#readme",
-  "dependencies": {},
-  "devDependencies": {
+  "dependencies": {
     "electron": "^7.1.1"
+  },
+  "devDependencies": {
+    "electron-packager": "^14.1.0"
   }
 }
