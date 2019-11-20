@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-header{
+#toolbar-holder{
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-start;
@@ -21,14 +21,24 @@ header{
     -webkit-app-region: no-drag;
 }
 
-.option:hover:first-child{
+.toolbar-option{
+    padding: 5px 5px;
+    font-size: 12px;
+    color: white;
+    cursor: pointer;
+    -webkit-app-region: no-drag;
+}
+
+.toolbar-option:hover:first-child{
     background: red;
 }
 
-.option:hover:nth-child(2){
+.toolbar-option:hover:nth-child(2){
     background: blue;
 }
 
-.option:hover:nth-child(3){
+.toolbar-option:hover:nth-child(3){
     background: green;
 }
+
+

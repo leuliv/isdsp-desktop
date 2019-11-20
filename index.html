@@ -8,17 +8,21 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <script src="js/angular.js"></script>
   <script src="js/angular-route.js"></script>
   <title>ISDSP</title>
 </head>
 
 <body>
-  <div id="content">
-    <header ng-controller="headCtrl" class="nav-wrapper">
-      <div class="option" ng-click="close()">&#x2716;</div>
-      <div class="option" ng-click="maximize()">&#x1f5d6;</div>
-      <div class="option" ng-click="minimize()">&#x1f5d5;</div>
+  <div id="toolbar-content">
+    <header id="toolbar-holder" ng-controller="headCtrl" class="z-depth-5">
+      <div class="toolbar-option" ng-click="close()">&#x2716;</div>
+      <div class="toolbar-option" ng-click="maximize()">&#x1f5d6;</div>
+      <div class="toolbar-option" ng-click="minimize()">&#x1f5d5;</div>
     </header>
     <div id="mainContent" ng-view></div>
   </div>
