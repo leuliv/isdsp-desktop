@@ -3,7 +3,15 @@ const {remote} = require('electron')
 
 app.config(function($routeProvider){
 	$routeProvider.when('/',{
+        //templateUrl: __dirname +'/components/auth/signup.html',
 		templateUrl: __dirname +'/components/home/home.html',
+		controller: 'homeCtrl'
+	})
+});
+
+app.config(function($routeProvider){
+	$routeProvider.when('/profile',{
+		templateUrl: __dirname +'/components/profile/profile.html',
 		controller: 'homeCtrl'
 	})
 });

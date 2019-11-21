@@ -9,11 +9,12 @@ let mainWindow
 app.on('ready', function () {
     mainWindow = new BrowserWindow({
         width: 900,
-        height: 650,
+        height: 680,
         minWidth: 900,
-        minHeight: 650,
+        minHeight: 680,
         frame: false,
         title: 'ISDSP',
+        icon: path.join(__dirname, 'assets/icons/png/icon.png'),
         webPreferences: {
             nodeIntegration: true
         }

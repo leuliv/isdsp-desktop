@@ -50,6 +50,10 @@
     #home-dashboard {
         padding: 25px;
     }
+
+    .dashcard {
+        cursor: pointer;
+    }
 </style>
 
 <div id="container">
@@ -67,25 +71,52 @@
 <div id="home-dashboard">
     <div class="row">
         <div class="col-sm-4">
-            <div class="card blue-grey darken-1">
+            <div ng-click="class" class="card blue-grey darken-1 dashcard">
                 <div class="card-content white-text">
-                    <span class="card-title"><i class="material-icons">save_alt</i> Saved Documents</span>
-                    <p>Documents that you saved</p>
+                    <span class="card-title"><i class="material-icons">timeline</i> Timeline</span>
+                    <p>Shares and Uploads</p>
                 </div>
             </div>
         </div>
         <div class="col-sm-4">
-            <div class="card blue-grey darken-1">
+            <div class="card blue-grey darken-1 dashcard">
                 <div class="card-content white-text">
-                    <span class="card-title"><i class="material-icons">save_alt</i> Saved Documents</span>
-                    <p>Documents that you saved</p>
+                    <span class="card-title"><i class="material-icons">search</i> Search</span>
+                    <p>Search for books</p>
                 </div>
             </div>
         </div>
         <div class="col-sm-4">
-            <div class="card blue-grey darken-1">
+            <div class="card blue-grey darken-1 dashcard">
                 <div class="card-content white-text">
-                    <span class="card-title"><i class="material-icons">save_alt</i> Saved Documents</span>
+                    <span class="card-title"><i class="material-icons">notifications</i> Notifications</span>
+                    <p>App notifications</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="card blue-grey darken-1 dashcard">
+                <div class="card-content white-text">
+                    <span class="card-title"><i class="material-icons">person</i> Profile</span>
+                    <p>Go to your profile</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div ng-click="class" class="card blue-grey darken-1 dashcard">
+                <div class="card-content white-text">
+                    <span class="card-title"><i class="material-icons">class</i> My Class</span>
+                    <p>Go to your class</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card blue-grey darken-1 dashcard">
+                <div class="card-content white-text">
+                    <span class="card-title"><i class="material-icons">save_alt</i> Saved</span>
                     <p>Documents that you saved</p>
                 </div>
             </div>
@@ -94,26 +125,26 @@
 
     <div class="row">
         <div class="col-sm-4">
-            <div class="card blue-grey darken-1">
+            <div class="card blue-grey darken-1 dashcard">
                 <div class="card-content white-text">
-                    <span class="card-title"><i class="material-icons">save_alt</i> Saved Documents</span>
-                    <p>Documents that you saved</p>
+                    <span class="card-title"><i class="material-icons">settings</i> Settings</span>
+                    <p>Change your account settings</p>
                 </div>
             </div>
         </div>
         <div class="col-sm-4">
-            <div class="card blue-grey darken-1">
+            <div class="card blue-grey darken-1 dashcard">
                 <div class="card-content white-text">
-                    <span class="card-title"><i class="material-icons">save_alt</i> Saved Documents</span>
-                    <p>Documents that you saved</p>
+                    <span class="card-title"><i class="material-icons">help</i> Help</span>
+                    <p>Learn how to use the platform</p>
                 </div>
             </div>
         </div>
         <div class="col-sm-4">
-            <div class="card blue-grey darken-1">
+            <div class="card blue-grey darken-1 dashcard">
                 <div class="card-content white-text">
-                    <span class="card-title"><i class="material-icons">save_alt</i> Saved Documents</span>
-                    <p>Documents that you saved</p>
+                    <span class="card-title"><i class="material-icons">info</i> About</span>
+                    <p>About the develpers</p>
                 </div>
             </div>
         </div>
