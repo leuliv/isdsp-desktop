@@ -44,49 +44,34 @@
 <div class="center">
     <form>
         <div class="row">
-            <span id="atitle">Sign Up</span>
+            <span id="atitle">Sign Up (Class Info)</span>
+        </div>
+
+        <div class="row">
+            <div id="myList"></div>
+            <script type="text/javascript">
+                var names = ['vitosh', 'academy', 'dot', 'com'];
+                var ul = document.createElement('ul');
+                document.getElementById('myList').appendChild(ul);
+
+                names.forEach(function (name) {
+                    var li = document.createElement('li');
+                    ul.appendChild(li);
+                    li.innerHTML += name;
+                });
+            </script>
         </div>
         <div class="row">
-            <div class="input-field col s6">
-                <input id="first_name" type="text" class="validate">
-                <label for="first_name">First Name</label>
-            </div>
-            <div class="input-field col s6">
-                <input id="last_name" type="text" class="validate">
-                <label for="last_name">Father's Name</label>
-            </div>
+            <label>Department</label>
+            <select class="browser-default">
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
         </div>
         <div class="row">
-            <div class="input-field col s12">
-                <select>
-                    <option value="" disabled selected>Choose your option</option>
-                    <option value="1">Option 1</option>
-                    <option value="2">Option 2</option>
-                    <option value="3">Option 3</option>
-                </select>
-                <label>Materialize Select</label>
-            </div>
-        </div>
-        <div class="row">
-            <div class="input-field col s12">
-                <input id="email" type="email" class="validate">
-                <label for="email">Email</label>
-            </div>
-        </div>
-        <div class="row">
-            <div class="input-field col s12">
-                <input id="password" type="password" class="validate">
-                <label for="password">Password</label>
-            </div>
-        </div>
-        <div class="row">
-            <div class="input-field col s12">
-                <input id="confirm-password" type="password" class="validate">
-                <label for="confirm-password">Confirm Password</label>
-            </div>
-        </div>
-        <div class="row">
-            <a href="#!register"><button class="col s12 waves-effect waves-light btn-large">Finish</button></a>
+            <a href="#!signup_nxt"><button class="col s12 waves-effect waves-light btn-large">Next</button></a>
         </div>
 
     </form>
@@ -96,15 +81,5 @@
 </div>
 
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        var elems = document.querySelectorAll('select');
-        var instances = M.FormSelect.init(elems, options);
-    });
-
-    // Or with jQuery
-
-    $(document).ready(function () {
-        $('select').formSelect();
-    });
 
 </script>

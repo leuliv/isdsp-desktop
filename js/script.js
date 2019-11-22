@@ -1,6 +1,5 @@
 var app = angular.module('app', ['ngRoute']);
-const { remote } = require('electron')
-
+const { remote } = require('electron');
 
 app.config(['$routeProvider', function ($routeProvider) {
     $routeProvider
@@ -30,6 +29,8 @@ app.config(['$routeProvider', function ($routeProvider) {
         })
         .when('/signup', {
             templateUrl: __dirname + '/components/auth/signup.html'
+        }).when('/signup_nxt', {
+            templateUrl: __dirname + '/components/auth/signup_nxt.html'
         })
         .otherwise({
             redirectTo: '/'
