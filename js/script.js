@@ -6,11 +6,11 @@ app.config(['$routeProvider', function ($routeProvider) {
         .when('/', {
             templateUrl: __dirname + '/components/home/home.html',
             controller: 'homeCtrl',
-            resolve: {
+            /* resolve: {
                 currentAuth: function (AuthService) {
                     return AuthService.authenticate();
                 }
-            }
+            } */
         })
         .when('/profile', {
             templateUrl: __dirname + '/components/profile/profile.html',
