@@ -13,7 +13,7 @@
   "author": "Leul Woldegabriel",
   "license": "MIT",
   "dependencies": {
-    "electron": "^7.1.1",
+    "electron": "^7.2.4",
     "mysql": "^2.17.1"
   },
   "devDependencies": {
